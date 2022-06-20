@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" />
+</head>
+<body>
+    @*<style>
+        body {
+            background-image: url('https://media.istockphoto.com/photos/aerial-view-of-residential-distratic-at-major-mackenzie-dr-and-ave-picture-id1320991884?s=612x612');
+        
+        }
+    </style>*@
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <div style="bottom:0;width:50%;">
+                <hr style="width:auto;" />
+                <footer>
+                    <div class="" ;style="padding-right: 350px;">  <p>&copy; @DateTime.Now.Year <b>- Peacematha SofTech, Inc</b></p></div>
+                </footer>
+            </div>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.13.1.min.js"></script>
+    <script src="~/Scripts/notify.min.js.txt"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html> 
